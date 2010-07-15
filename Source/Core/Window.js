@@ -1687,7 +1687,7 @@ MUI.Window = (MUI.Window || new NamedClass('MUI.Window',{})).implement({
 		}
 
 		// Resize panels if there are any
-		if (this.el.contentWrapper.getChildren('.column') != null){
+		if (this.el.contentWrapper.getChildren('.column').length){
 			MUI.rWidth(this.el.contentWrapper);
 			this.el.contentWrapper.getChildren('.column').each(function(column){
 				MUI.panelHeight(column);
